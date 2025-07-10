@@ -2,3 +2,6 @@ spring:
   application:
     name: Kakao Login Auth
 
+kakao:
+  client_id: 85f0220d1045925d030b0f77f66494c3
+  redirect_uri: http://localhost:8080/callback
