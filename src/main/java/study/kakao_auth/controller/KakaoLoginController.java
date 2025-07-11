@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import study.kakao_auth.service.KakaoService;
+
+import java.io.IOException;
 
 @Slf4j
 @RestController
@@ -15,9 +18,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("")
 public class KakaoLoginController {
 
-    @GetMapping("/callback")
-    public ResponseEntity<?> callback(@RequestParam("code") String code) {
+    private final KakaoService kakaoService;
 
+    @GetMapping("/callback")
+    public ResponseEntity<?> callback(@RequestParam("code") String code) throws IOException {
+        String accessToken = kakaoService.getAccessTokenFromKakao(code);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }
