@@ -57,7 +57,10 @@ public class KakaoLoginPageController {
 
 ### 2. 카카오 계정 인증
 - 카카오 로그인 페이지로 리디렉션되며, 사용자는 자신의 카카오 계정으로 로그인합니다.
-<img width="419" height="593" alt="image" src="https://github.com/user-attachments/assets/4fc3a4be-0ae0-4abb-8a42-4c50047e1f1c" />
+<img width="856" height="790" alt="image" src="https://github.com/user-attachments/assets/efae8131-667c-4fe4-8c4c-c6c3ceeaceb5" />
+<img width="942" height="795" alt="image" src="https://github.com/user-attachments/assets/81296f07-0e85-46e6-ac39-c1a72b329191" />
+
+
 
 
 
